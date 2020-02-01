@@ -41,8 +41,7 @@ object AreaAnalyse02 {
     
     val frame: DataFrame = sqlContext.read.parquet(input)
   
-  
-    println(frame.printSchema())
+    
     
     import org.apache.spark.sql.functions._
     val newFrame: DataFrame = frame.withColumn("id",col("id").cast(StringType))

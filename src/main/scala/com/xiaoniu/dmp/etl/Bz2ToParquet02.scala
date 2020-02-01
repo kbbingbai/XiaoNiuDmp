@@ -36,8 +36,7 @@ object Bz2ToParquet02 {
     logRdd.write.partitionBy("name").parquet("G:\\05")
   
     context.stop()
-  
-  
+    
   }
   
 }
